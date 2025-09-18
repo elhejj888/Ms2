@@ -1,8 +1,21 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/register": "pages/register.js",
   "/": "pages/index.js",
-  "/login": "pages/login.js"
+  "/blog": "pages/blog.js",
+  "/index_backup": "pages/index_backup.js",
+  "/login": "pages/login.js",
+  "/platforms/pinterest": "pages/platforms/pinterest.js",
+  "/platforms/reddit": "pages/platforms/reddit.js",
+  "/platforms/twitter": "pages/platforms/twitter.js",
+  "/platforms/facebook": "pages/platforms/facebook.js",
+  "/platforms/instagram": "pages/platforms/instagram.js",
+  "/platforms/tiktok": "pages/platforms/tiktok.js",
+  "/pricing": "pages/pricing.js",
+  "/platforms/youtube": "pages/platforms/youtube.js",
+  "/profile": "pages/profile.js",
+  "/privacy": "pages/privacy.js",
+  "/register": "pages/register.js",
+  "/terms": "pages/terms.js",
+  "/_error": "pages/_error.js"
 }

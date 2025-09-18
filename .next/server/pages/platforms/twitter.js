@@ -1,11 +1,11 @@
 "use strict";
 (() => {
 var exports = {};
-exports.id = 455;
-exports.ids = [455];
+exports.id = 20;
+exports.ids = [20];
 exports.modules = {
 
-/***/ 6459:
+/***/ 3578:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   config: () => (/* binding */ config),
-  "default": () => (/* binding */ next_route_loaderkind_PAGES_page_2Fplatforms_2Ffacebook_preferredRegion_absolutePagePath_private_next_pages_2Fplatforms_2Ffacebook_jsx_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_middlewareConfigBase64_e30_3D_),
+  "default": () => (/* binding */ next_route_loaderkind_PAGES_page_2Fplatforms_2Ftwitter_preferredRegion_absolutePagePath_private_next_pages_2Fplatforms_2Ftwitter_jsx_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_middlewareConfigBase64_e30_3D_),
   getServerSideProps: () => (/* binding */ getServerSideProps),
   getStaticPaths: () => (/* binding */ getStaticPaths),
   getStaticProps: () => (/* binding */ getStaticProps),
@@ -27,11 +27,11 @@ __webpack_require__.d(__webpack_exports__, {
   unstable_getStaticProps: () => (/* binding */ unstable_getStaticProps)
 });
 
-// NAMESPACE OBJECT: ./src/pages/platforms/facebook.jsx
-var facebook_namespaceObject = {};
-__webpack_require__.r(facebook_namespaceObject);
-__webpack_require__.d(facebook_namespaceObject, {
-  "default": () => (platforms_facebook)
+// NAMESPACE OBJECT: ./src/pages/platforms/twitter.jsx
+var twitter_namespaceObject = {};
+__webpack_require__.r(twitter_namespaceObject);
+__webpack_require__.d(twitter_namespaceObject, {
+  "default": () => (platforms_twitter)
 });
 
 // EXTERNAL MODULE: ./node_modules/next/dist/server/future/route-modules/pages/module.js
@@ -62,10 +62,12 @@ var Footer = __webpack_require__(7623);
 var arrow_right = __webpack_require__(2705);
 // EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/circle-check-big.js
 var circle_check_big = __webpack_require__(8946);
-// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/users.js
-var users = __webpack_require__(4941);
-// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/share-2.js
-var share_2 = __webpack_require__(9822);
+// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/twitter.js
+var twitter = __webpack_require__(6646);
+// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/message-circle.js
+var message_circle = __webpack_require__(5338);
+// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/trending-up.js
+var trending_up = __webpack_require__(2686);
 // EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/calendar.js
 var calendar = __webpack_require__(6796);
 // EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/chart-column.js
@@ -80,9 +82,7 @@ var sparkles = __webpack_require__(7788);
 var rocket = __webpack_require__(3011);
 // EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/shield.js
 var shield = __webpack_require__(4115);
-// EXTERNAL MODULE: ./node_modules/lucide-react/dist/esm/icons/facebook.js
-var facebook = __webpack_require__(9723);
-;// CONCATENATED MODULE: ./src/pages/platforms/facebook.jsx
+;// CONCATENATED MODULE: ./src/pages/platforms/twitter.jsx
 
 
 
@@ -103,8 +103,7 @@ var facebook = __webpack_require__(9723);
 
 
 
-
-const FacebookPlatform = ()=>{
+const TwitterPlatform = ()=>{
     const [isVisible, setIsVisible] = (0,external_react_.useState)(false);
     const [scrollY, setScrollY] = (0,external_react_.useState)(0);
     (0,external_react_.useEffect)(()=>{
@@ -115,27 +114,27 @@ const FacebookPlatform = ()=>{
     }, []);
     const features = [
         {
-            icon: /*#__PURE__*/ jsx_runtime.jsx(share_2/* default */.Z, {
+            icon: /*#__PURE__*/ jsx_runtime.jsx(message_circle/* default */.Z, {
                 className: "w-8 h-8"
             }),
-            title: "Smart Post Creation",
-            description: "Create engaging Facebook posts with AI assistance. Generate content that drives likes, shares, and meaningful conversations with your audience.",
+            title: "Smart Tweet Creation",
+            description: "Create engaging tweets with AI assistance. Generate compelling content that drives retweets, likes, and meaningful conversations on X (Twitter).",
             benefits: [
-                "AI content generation",
-                "Engagement optimization",
-                "Multi-format posts"
+                "AI tweet generation",
+                "Thread creation",
+                "Engagement optimization"
             ]
         },
         {
             icon: /*#__PURE__*/ jsx_runtime.jsx(calendar/* default */.Z, {
                 className: "w-8 h-8"
             }),
-            title: "Advanced Scheduling",
-            description: "Schedule Facebook posts for optimal reach and engagement. Our AI analyzes your audience activity patterns to maximize visibility.",
+            title: "Strategic Scheduling",
+            description: "Schedule tweets for optimal engagement times. Our AI analyzes your audience activity to suggest the best times to tweet for maximum reach.",
             benefits: [
-                "Peak time scheduling",
-                "Bulk post planning",
-                "Cross-page management"
+                "Peak time analysis",
+                "Thread scheduling",
+                "Bulk tweet planning"
             ]
         },
         {
@@ -143,66 +142,66 @@ const FacebookPlatform = ()=>{
                 className: "w-8 h-8"
             }),
             title: "AI Content Assistant",
-            description: "Leverage AI to automatically generate Facebook posts, comments, and page updates that maintain your brand voice and drive engagement.",
+            description: "Leverage AI to automatically generate tweets, replies, and threads that maintain your voice and drive engagement on the platform.",
             benefits: [
-                "Automated posting",
-                "Brand consistency",
-                "Content suggestions"
+                "Automated tweeting",
+                "Reply suggestions",
+                "Voice consistency"
             ]
         },
         {
             icon: /*#__PURE__*/ jsx_runtime.jsx(chart_column/* default */.Z, {
                 className: "w-8 h-8"
             }),
-            title: "Page Analytics",
-            description: "Track your Facebook page performance with detailed insights. Monitor reach, engagement, page likes, and audience demographics.",
+            title: "Tweet Analytics",
+            description: "Track your Twitter performance with detailed analytics. Monitor impressions, engagement rates, follower growth, and tweet performance.",
             benefits: [
-                "Reach tracking",
+                "Impression tracking",
                 "Engagement metrics",
-                "Audience insights"
-            ]
-        },
-        {
-            icon: /*#__PURE__*/ jsx_runtime.jsx(users/* default */.Z, {
-                className: "w-8 h-8"
-            }),
-            title: "Community Building",
-            description: "Build and manage your Facebook community with automated responses and engagement tools. Foster meaningful connections with followers.",
-            benefits: [
-                "Auto-responses",
-                "Community management",
-                "Follower engagement"
+                "Growth analysis"
             ]
         },
         {
             icon: /*#__PURE__*/ jsx_runtime.jsx(target/* default */.Z, {
                 className: "w-8 h-8"
             }),
-            title: "Audience Targeting",
-            description: "Optimize your Facebook content for specific audience segments. Use AI insights to create content that resonates with your target demographics.",
+            title: "Hashtag Optimization",
+            description: "Discover and use trending hashtags to increase your tweet visibility. Our AI suggests relevant hashtags for maximum reach.",
             benefits: [
-                "Demographic targeting",
-                "Interest-based content",
-                "Audience analysis"
+                "Trending hashtags",
+                "Hashtag analytics",
+                "Reach optimization"
+            ]
+        },
+        {
+            icon: /*#__PURE__*/ jsx_runtime.jsx(trending_up/* default */.Z, {
+                className: "w-8 h-8"
+            }),
+            title: "Trend Monitoring",
+            description: "Stay ahead of Twitter trends with real-time monitoring. Identify viral opportunities and join conversations at the right moment.",
+            benefits: [
+                "Real-time trends",
+                "Viral content detection",
+                "Conversation insights"
             ]
         }
     ];
     const stats = [
         {
-            number: "800K+",
-            label: "Facebook Posts Created"
+            number: "2M+",
+            label: "Tweets Created"
         },
         {
-            number: "120%",
-            label: "Reach Increase"
+            number: "180%",
+            label: "Engagement Boost"
         },
         {
-            number: "25K+",
-            label: "Pages Managed"
+            number: "50K+",
+            label: "Threads Scheduled"
         },
         {
             number: "24/7",
-            label: "AI Monitoring"
+            label: "Trend Monitoring"
         }
     ];
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
@@ -210,11 +209,11 @@ const FacebookPlatform = ()=>{
             /*#__PURE__*/ (0,jsx_runtime.jsxs)((head_default()), {
                 children: [
                     /*#__PURE__*/ jsx_runtime.jsx("title", {
-                        children: "Facebook Management | SocialFlow - AI-Powered Facebook Marketing"
+                        children: "X (Twitter) Management | SocialFlow - AI-Powered Twitter Marketing"
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("meta", {
                         name: "description",
-                        content: "Grow your Facebook presence with AI-powered content creation, scheduling, and analytics. Build engaged communities with SocialFlow."
+                        content: "Grow your X (Twitter) presence with AI-powered tweet creation, scheduling, and analytics. Join trending conversations with SocialFlow."
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("meta", {
                         name: "robots",
@@ -222,19 +221,19 @@ const FacebookPlatform = ()=>{
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("link", {
                         rel: "canonical",
-                        href: "https://yourdomain.com/platforms/facebook"
+                        href: "https://yourdomain.com/platforms/twitter"
                     })
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: "min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900",
+                className: "min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black",
                 children: [
                     /*#__PURE__*/ jsx_runtime.jsx(Header/* default */.Z, {}),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("section", {
                         className: "relative py-32 overflow-hidden",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                                className: "absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-500/20"
+                                className: "absolute inset-0 bg-gradient-to-r from-gray-600/20 via-blue-600/20 to-purple-500/20"
                             }),
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
                                 className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -244,12 +243,12 @@ const FacebookPlatform = ()=>{
                                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                                             className: "inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-lg rounded-full text-sm font-medium mb-8 border border-white/20",
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime.jsx(facebook/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime.jsx(twitter/* default */.Z, {
                                                     className: "w-5 h-5 mr-3 text-blue-400"
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime.jsx("span", {
                                                     className: "text-white",
-                                                    children: "Facebook Management"
+                                                    children: "X (Twitter) Management"
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime.jsx(sparkles/* default */.Z, {
                                                     className: "w-4 h-4 ml-3 text-yellow-400"
@@ -259,44 +258,29 @@ const FacebookPlatform = ()=>{
                                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("h1", {
                                             className: "text-6xl md:text-8xl font-black text-white mb-8 leading-tight",
                                             children: [
-                                                "Build Facebook",
+                                                "Master X (Twitter)",
                                                 /*#__PURE__*/ jsx_runtime.jsx("span", {
                                                     className: "block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent",
-                                                    children: "Communities That Thrive"
+                                                    children: "Conversations"
                                                 })
                                             ]
                                         }),
                                         /*#__PURE__*/ jsx_runtime.jsx("p", {
                                             className: "text-2xl text-white/80 max-w-4xl mx-auto mb-12 leading-relaxed",
-                                            children: "Create compelling Facebook content, schedule posts for maximum reach, and build engaged communities with our AI-powered Facebook management platform."
+                                            children: "Create engaging tweets, build meaningful conversations, and grow your X (Twitter) presence with our AI-powered social media management platform."
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                                            className: "flex flex-col sm:flex-row gap-8 justify-center mb-20",
-                                            children: [
-                                                /*#__PURE__*/ (0,jsx_runtime.jsxs)((link_default()), {
-                                                    href: "/register",
-                                                    className: "group px-12 py-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 flex items-center justify-center text-xl",
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime.jsx(rocket/* default */.Z, {
-                                                            className: "w-6 h-6 mr-3"
-                                                        }),
-                                                        "Start Free Trial",
-                                                        /*#__PURE__*/ jsx_runtime.jsx(arrow_right/* default */.Z, {
-                                                            className: "w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,jsx_runtime.jsxs)((link_default()), {
-                                                    href: "/login",
-                                                    className: "px-12 py-6 bg-white/10 backdrop-blur-lg text-white font-bold rounded-2xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 flex items-center justify-center text-xl",
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime.jsx(shield/* default */.Z, {
-                                                            className: "w-6 h-6 mr-3"
-                                                        }),
-                                                        "Sign In"
-                                                    ]
-                                                })
-                                            ]
+                                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                            className: "flex flex-col sm:flex-row gap-4 justify-center",
+                                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)((link_default()), {
+                                                href: "/register",
+                                                className: "inline-flex items-center px-8 py-4 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105",
+                                                children: [
+                                                    "Start Tweeting Smarter",
+                                                    /*#__PURE__*/ jsx_runtime.jsx(arrow_right/* default */.Z, {
+                                                        className: "w-5 h-5 ml-2"
+                                                    })
+                                                ]
+                                            })
                                         })
                                     ]
                                 })
@@ -318,16 +302,16 @@ const FacebookPlatform = ()=>{
                                             /*#__PURE__*/ (0,jsx_runtime.jsxs)("h2", {
                                                 className: "text-5xl md:text-7xl font-black text-white mb-8",
                                                 children: [
-                                                    "Powerful Facebook",
+                                                    "Complete X (Twitter)",
                                                     /*#__PURE__*/ jsx_runtime.jsx("span", {
                                                         className: "block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent",
-                                                        children: "Management Features"
+                                                        children: "Management Solution"
                                                     })
                                                 ]
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("p", {
                                                 className: "text-2xl text-white/80 max-w-4xl mx-auto",
-                                                children: "Everything you need to grow your Facebook presence"
+                                                children: "From tweet creation to audience engagement, our AI tools help you build meaningful connections and grow your X (Twitter) presence."
                                             })
                                         ]
                                     }),
@@ -371,7 +355,7 @@ const FacebookPlatform = ()=>{
                         className: "py-32 relative",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                                className: "absolute inset-0 bg-gradient-to-r from-purple-600/10 via-blue-600/10 to-pink-500/10"
+                                className: "absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-500/10"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                                 className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -384,14 +368,14 @@ const FacebookPlatform = ()=>{
                                                 children: [
                                                     "How SocialFlow Works",
                                                     /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                        className: "block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent",
-                                                        children: "for Facebook"
+                                                        className: "block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent",
+                                                        children: "for X (Twitter)"
                                                     })
                                                 ]
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("p", {
                                                 className: "text-2xl text-white/80 max-w-4xl mx-auto",
-                                                children: "Grow your Facebook presence in three simple steps"
+                                                children: "Build your X (Twitter) presence in three simple steps"
                                             })
                                         ]
                                     }),
@@ -410,11 +394,11 @@ const FacebookPlatform = ()=>{
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime.jsx("h3", {
                                                         className: "text-2xl font-bold text-white mb-6",
-                                                        children: "Connect Your Facebook Page"
+                                                        children: "Connect Your X (Twitter) Account"
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime.jsx("p", {
                                                         className: "text-white/70 leading-relaxed",
-                                                        children: "Securely connect your Facebook business page to access our comprehensive management and analytics tools."
+                                                        children: "Securely connect your X (Twitter) account to access our comprehensive tweet management and analytics tools."
                                                     })
                                                 ]
                                             }),
@@ -430,11 +414,11 @@ const FacebookPlatform = ()=>{
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime.jsx("h3", {
                                                         className: "text-2xl font-bold text-white mb-6",
-                                                        children: "Create Engaging Content"
+                                                        children: "Create Engaging Tweets"
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime.jsx("p", {
                                                         className: "text-white/70 leading-relaxed",
-                                                        children: "Use AI to generate compelling Facebook posts that drive engagement and build meaningful connections with your audience."
+                                                        children: "Use AI to generate compelling tweets, threads, and replies that spark conversations and drive engagement."
                                                     })
                                                 ]
                                             }),
@@ -454,7 +438,7 @@ const FacebookPlatform = ()=>{
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime.jsx("p", {
                                                         className: "text-white/70 leading-relaxed",
-                                                        children: "Schedule posts for optimal reach and track performance with detailed analytics to continuously improve your strategy."
+                                                        children: "Schedule tweets for optimal reach and track performance with detailed analytics to grow your following."
                                                     })
                                                 ]
                                             })
@@ -465,45 +449,47 @@ const FacebookPlatform = ()=>{
                         ]
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("section", {
-                        className: "py-32 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 relative overflow-hidden",
+                        className: "py-32 relative",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                                className: "absolute inset-0 bg-black/20"
+                                className: "absolute inset-0 bg-gradient-to-r from-gray-900 to-black"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                                 className: "relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("h2", {
-                                        className: "text-5xl md:text-7xl font-black text-white mb-8",
-                                        children: [
-                                            "Ready to Transform",
-                                            /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                className: "block",
-                                                children: "Your Facebook Presence?"
-                                            })
-                                        ]
+                                    /*#__PURE__*/ jsx_runtime.jsx("h2", {
+                                        className: "text-4xl font-bold text-white mb-6",
+                                        children: "Ready to Go Viral on X?"
                                     }),
                                     /*#__PURE__*/ jsx_runtime.jsx("p", {
-                                        className: "text-2xl text-white/90 max-w-4xl mx-auto mb-16",
-                                        children: "Join businesses and creators who use SocialFlow to build thriving Facebook communities and drive meaningful engagement."
+                                        className: "text-xl text-gray-300 mb-8",
+                                        children: "Join influencers and thought leaders who use SocialFlow to build their X (Twitter) presence and drive meaningful conversations."
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                                        className: "flex flex-col sm:flex-row gap-8 justify-center",
+                                        className: "flex flex-col sm:flex-row gap-8 justify-center mb-20",
                                         children: [
                                             /*#__PURE__*/ (0,jsx_runtime.jsxs)((link_default()), {
                                                 href: "/register",
-                                                className: "group px-12 py-6 bg-black text-white font-bold rounded-2xl shadow-2xl hover:shadow-black/50 transition-all duration-300 transform hover:scale-110 flex items-center justify-center text-xl",
+                                                className: "group px-12 py-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 flex items-center justify-center text-xl",
                                                 children: [
-                                                    "Start Free Trial",
+                                                    /*#__PURE__*/ jsx_runtime.jsx(rocket/* default */.Z, {
+                                                        className: "w-6 h-6 mr-3"
+                                                    }),
+                                                    "Start Building Your Audience",
                                                     /*#__PURE__*/ jsx_runtime.jsx(arrow_right/* default */.Z, {
-                                                        className: "w-7 h-7 ml-4 group-hover:translate-x-2 transition-transform"
+                                                        className: "w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform"
                                                     })
                                                 ]
                                             }),
-                                            /*#__PURE__*/ jsx_runtime.jsx((link_default()), {
-                                                href: "/pricing",
-                                                className: "px-12 py-6 bg-white/20 backdrop-blur-lg text-white font-bold rounded-2xl border-2 border-white/30 hover:bg-white/30 transition-all duration-300 transform hover:scale-105 text-xl",
-                                                children: "View Pricing"
+                                            /*#__PURE__*/ (0,jsx_runtime.jsxs)((link_default()), {
+                                                href: "/login",
+                                                className: "px-12 py-6 bg-white/10 backdrop-blur-lg text-white font-bold rounded-2xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 flex items-center justify-center text-xl",
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime.jsx(shield/* default */.Z, {
+                                                        className: "w-6 h-6 mr-3"
+                                                    }),
+                                                    "Sign In"
+                                                ]
                                             })
                                         ]
                                     })
@@ -517,9 +503,9 @@ const FacebookPlatform = ()=>{
         ]
     });
 };
-/* harmony default export */ const platforms_facebook = (FacebookPlatform);
+/* harmony default export */ const platforms_twitter = (TwitterPlatform);
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2Fplatforms%2Ffacebook&preferredRegion=&absolutePagePath=private-next-pages%2Fplatforms%2Ffacebook.jsx&absoluteAppPath=private-next-pages%2F_app.js&absoluteDocumentPath=private-next-pages%2F_document.js&middlewareConfigBase64=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2Fplatforms%2Ftwitter&preferredRegion=&absolutePagePath=private-next-pages%2Fplatforms%2Ftwitter.jsx&absoluteAppPath=private-next-pages%2F_app.js&absoluteDocumentPath=private-next-pages%2F_document.js&middlewareConfigBase64=e30%3D!
 // @ts-ignore this need to be imported from next/dist to be external
 
 
@@ -534,25 +520,25 @@ const FacebookPlatform = ()=>{
 
 const PagesRouteModule = pages_module.PagesRouteModule;
 // Re-export the component (should be the default export).
-/* harmony default export */ const next_route_loaderkind_PAGES_page_2Fplatforms_2Ffacebook_preferredRegion_absolutePagePath_private_next_pages_2Fplatforms_2Ffacebook_jsx_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_middlewareConfigBase64_e30_3D_ = ((0,helpers/* hoist */.l)(facebook_namespaceObject, "default"));
+/* harmony default export */ const next_route_loaderkind_PAGES_page_2Fplatforms_2Ftwitter_preferredRegion_absolutePagePath_private_next_pages_2Fplatforms_2Ftwitter_jsx_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_middlewareConfigBase64_e30_3D_ = ((0,helpers/* hoist */.l)(twitter_namespaceObject, "default"));
 // Re-export methods.
-const getStaticProps = (0,helpers/* hoist */.l)(facebook_namespaceObject, "getStaticProps");
-const getStaticPaths = (0,helpers/* hoist */.l)(facebook_namespaceObject, "getStaticPaths");
-const getServerSideProps = (0,helpers/* hoist */.l)(facebook_namespaceObject, "getServerSideProps");
-const config = (0,helpers/* hoist */.l)(facebook_namespaceObject, "config");
-const reportWebVitals = (0,helpers/* hoist */.l)(facebook_namespaceObject, "reportWebVitals");
+const getStaticProps = (0,helpers/* hoist */.l)(twitter_namespaceObject, "getStaticProps");
+const getStaticPaths = (0,helpers/* hoist */.l)(twitter_namespaceObject, "getStaticPaths");
+const getServerSideProps = (0,helpers/* hoist */.l)(twitter_namespaceObject, "getServerSideProps");
+const config = (0,helpers/* hoist */.l)(twitter_namespaceObject, "config");
+const reportWebVitals = (0,helpers/* hoist */.l)(twitter_namespaceObject, "reportWebVitals");
 // Re-export legacy methods.
-const unstable_getStaticProps = (0,helpers/* hoist */.l)(facebook_namespaceObject, "unstable_getStaticProps");
-const unstable_getStaticPaths = (0,helpers/* hoist */.l)(facebook_namespaceObject, "unstable_getStaticPaths");
-const unstable_getStaticParams = (0,helpers/* hoist */.l)(facebook_namespaceObject, "unstable_getStaticParams");
-const unstable_getServerProps = (0,helpers/* hoist */.l)(facebook_namespaceObject, "unstable_getServerProps");
-const unstable_getServerSideProps = (0,helpers/* hoist */.l)(facebook_namespaceObject, "unstable_getServerSideProps");
+const unstable_getStaticProps = (0,helpers/* hoist */.l)(twitter_namespaceObject, "unstable_getStaticProps");
+const unstable_getStaticPaths = (0,helpers/* hoist */.l)(twitter_namespaceObject, "unstable_getStaticPaths");
+const unstable_getStaticParams = (0,helpers/* hoist */.l)(twitter_namespaceObject, "unstable_getStaticParams");
+const unstable_getServerProps = (0,helpers/* hoist */.l)(twitter_namespaceObject, "unstable_getServerProps");
+const unstable_getServerSideProps = (0,helpers/* hoist */.l)(twitter_namespaceObject, "unstable_getServerSideProps");
 // Create and export the route module that will be consumed.
 const routeModule = new PagesRouteModule({
     definition: {
         kind: route_kind/* RouteKind */.x.PAGES,
-        page: "/platforms/facebook",
-        pathname: "/platforms/facebook",
+        page: "/platforms/twitter",
+        pathname: "/platforms/twitter",
         // The following aren't used in production.
         bundlePath: "",
         filename: ""
@@ -561,7 +547,7 @@ const routeModule = new PagesRouteModule({
         App: _app["default"],
         Document: _document["default"]
     },
-    userland: facebook_namespaceObject
+    userland: twitter_namespaceObject
 });
 
 //# sourceMappingURL=pages.js.map
@@ -708,11 +694,11 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 4941:
+/***/ 5338:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (/* binding */ Users)
+/* harmony export */   Z: () => (/* binding */ MessageCircle)
 /* harmony export */ });
 /* unused harmony export __iconNode */
 /* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4102);
@@ -726,15 +712,12 @@ module.exports = require("react");
 
 
 const __iconNode = [
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
-  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
-  ["path", { d: "M16 3.13a4 4 0 0 1 0 7.75", key: "1da9ce" }]
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
 ];
-const Users = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)("Users", __iconNode);
+const MessageCircle = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)("MessageCircle", __iconNode);
 
 
-//# sourceMappingURL=users.js.map
+//# sourceMappingURL=message-circle.js.map
 
 
 /***/ })
@@ -746,7 +729,7 @@ const Users = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"]
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [769,436,718,751,629,421,67,544,557], () => (__webpack_exec__(6459)));
+var __webpack_exports__ = __webpack_require__.X(0, [769,436,718,751,629,421,717,544,557], () => (__webpack_exec__(3578)));
 module.exports = __webpack_exports__;
 
 })();
