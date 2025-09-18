@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 // Add the API base URL constant
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://api.arabielle.com/';
 
 export default function Login() {
   const [usernameOrEmail, setUsernameOrEmail] = useState('');

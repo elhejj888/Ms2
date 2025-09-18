@@ -18,7 +18,7 @@ import Sidebar from '../components/Sidebar';
 import { CheckCircle, AlertCircle, Loader2, Share2, Zap, Globe, Lock } from 'lucide-react';
 
 // Use REACT_APP_ prefix for Create React App
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://api.arabielle.com/';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('reddit');

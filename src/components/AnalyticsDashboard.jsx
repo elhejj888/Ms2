@@ -20,7 +20,7 @@ const AnalyticsDashboard = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Use consistent environment variable with other components
-  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || process.env.REACT_APP_API_URL || 'http://localhost:5000';
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || process.env.REACT_APP_API_URL || 'https://api.arabielle.com/';
 
   const COLORS = {
     instagram: '#E4405F',
