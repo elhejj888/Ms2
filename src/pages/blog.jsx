@@ -168,7 +168,7 @@ const BlogPage = () => {
             backgroundImage: 'url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1920&h=1080&fit=crop&crop=center)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.5}px)`
+            transform: `translateY(${window.scrollY * 0.5}px)`
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 via-black/70 to-purple-900/50" />
